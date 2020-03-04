@@ -616,6 +616,7 @@
  <Compile Include="Assets\Scripts\Drawdeck.cs" />
  <Compile Include="Assets\Scripts\PlayCardManager.cs" />
  <Compile Include="Assets\Scripts\LoadLevel.cs" />
+ <Compile Include="Assets\Scripts\BackgroundSelector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

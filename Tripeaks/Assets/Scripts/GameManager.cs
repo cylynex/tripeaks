@@ -28,9 +28,16 @@ public class GameManager : MonoBehaviour {
     public Text scoreThisGameLabel;
     public Text bonusTextLabel;
     public Text overallScoreLabel;
+    public Image currentBoardBackground;
+
+    public static Sprite boardBackground;
+    public Sprite defaultBoardBackground;
 
 
     void Start() {
+
+        // Setup the background
+        SetupEnvironment();
 
         // Setup the game itself
         SetupTurnsAndScores();
@@ -44,6 +51,15 @@ public class GameManager : MonoBehaviour {
         // Create play deck
         CreatePlayDeck();                  
 
+    }
+
+
+    void SetupEnvironment() {
+        if (boardBackground) {
+            currentBoardBackground.GetComponent<Image>().sprite = boardBackground;
+        } else {
+            currentBoardBackground.GetComponent<Image>().sprite = defaultBoardBackground;
+        }
     }
 
 

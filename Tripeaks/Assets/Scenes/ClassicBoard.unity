@@ -1950,6 +1950,9 @@ MonoBehaviour:
   scoreThisGameLabel: {fileID: 1266057010}
   bonusTextLabel: {fileID: 8970001}
   overallScoreLabel: {fileID: 867143673}
+  currentBoardBackground: {fileID: 1770806378}
+  defaultBoardBackground: {fileID: 21300000, guid: c101e054cac024c01a87c536963b7f06,
+    type: 3}
 --- !u!4 &538729025
 Transform:
   m_ObjectHideFlags: 0
