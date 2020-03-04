@@ -1,0 +1,1 @@
+This is just a simple tripeaks solitaire game.  I couldn't find one that matched the very difficult scoring of the old Windows 95 version, or that didn't have 5000 ads, so I wrote this basically for myself to play.
