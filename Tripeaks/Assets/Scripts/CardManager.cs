@@ -9,11 +9,11 @@ public class CardManager : MonoBehaviour {
     public GameObject[] blockerCards;
     public bool isTopCard;
 
-    public GameObject pcm;
-    public PlayCardManager playCardManager;
+    GameObject pcm;
+    PlayCardManager playCardManager;
 
-    public GameObject gm;
-    public GameManager gameManager;
+    GameObject gm;
+    GameManager gameManager;
 
 
     private void Start() {
@@ -45,7 +45,9 @@ public class CardManager : MonoBehaviour {
             // Card matches the below condition - playable
             } else if (thisCard.cardValue == playCardManager.below) {
                 PlayThisCard();
-            } 
+            } else {
+                gameManager.ShowBonusText("Invalid Card");
+            }
         } 
     }
 
