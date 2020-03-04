@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
     public int scoreSpot;
     public int scoreThisGame;
     public static int overallScore;
+    public int currentStreak;
 
     // Turn rotation stuff
     public bool isFirstTurn;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour {
     public Text bonusTextLabel;
     public Text overallScoreLabel;
     public Image currentBoardBackground;
+    public Text currentStreakLabel;
 
     public static Sprite boardBackground;
     public Sprite defaultBoardBackground;
@@ -72,6 +74,8 @@ public class GameManager : MonoBehaviour {
         scoreThisGame = 0;
         scoreThisGameLabel.text = scoreThisGame.ToString();
         isFirstTurn = true;
+        currentStreak = 0;
+        UpdateCurrentStreak();
     }
 
 
@@ -127,8 +131,6 @@ public class GameManager : MonoBehaviour {
 
 
     // UI Stuff
-
-    // Cards left
     public void UpdateCardsLeft(int cardsLeft) {
         numCardsLeft.text = cardsLeft.ToString();
     }
@@ -163,6 +165,15 @@ public class GameManager : MonoBehaviour {
 
     public void CloseOutOverallScore() {
         overallScore = overallScore + scoreThisGame;
+    }
+
+    public void UpdateCurrentStreak() {
+        currentStreakLabel.text = currentStreak.ToString();
+    }
+
+    public void ResetStreak() {
+        currentStreak = 0;
+        UpdateCurrentStreak();
     }
 
 }

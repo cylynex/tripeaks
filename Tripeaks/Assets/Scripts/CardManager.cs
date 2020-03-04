@@ -71,6 +71,9 @@ public class CardManager : MonoBehaviour {
 
         gameManager.UpdateScore();
 
+        gameManager.currentStreak++;
+        gameManager.UpdateCurrentStreak();
+
         Object.Destroy(this.gameObject);
 
         gameManager.CheckForWin();

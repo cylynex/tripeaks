@@ -56,6 +56,7 @@ public class Drawdeck : MonoBehaviour {
             }
 
             gameManager.UpdateScore();
+            gameManager.ResetStreak();
 
         } else {
             SceneManager.LoadScene("Lose");
