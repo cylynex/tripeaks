@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ClassicBoard.unity
     guid: 38e3604759cad4e62901ed5d12e8294d
   - enabled: 1
+    path: Assets/Scenes/MonkeyHausBoard.unity
+    guid: d1e6ec482d673434db976e2a1f70f4ed
+  - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: 5a598609efe644379a7405d1f38d8b89
   - enabled: 1
